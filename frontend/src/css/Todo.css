@@ -1,0 +1,190 @@
+/* Ali_Mongi-L2Task10-TODOapp */
+
+body {
+  text-align: center;
+  /*background-color: darkgreen;*/
+  background-image: url("../images/back.jpg");
+  background-attachment: fixed;
+}
+
+/* HEADER */
+.header {
+  font-family: monospace;
+}
+
+.navHeader {
+  background-color: rgb(2, 24, 9);
+}
+
+.navHeader h6 {
+  color: white;
+}
+
+#navWelcomeMsg {
+  margin-right: 10px;
+}
+
+#navBtnLogout {
+  font-size: smaller;
+}
+
+/* TODO app */
+.todo {
+  display: inline-block;
+  margin-top: 1%;
+  max-height: fit-content;
+  border: solid 4px black;
+  border-radius: 15px;
+  background-color: rgb(235, 235, 235);
+  color: black;
+  font-style: bold;
+}
+
+.todoArea {
+  margin-left: 40px;
+}
+
+/* list of auto generated tasks */
+.taskList {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.taskList li {
+  text-align: left;
+  list-style-position: outside;
+  margin-left: 10px;
+}
+
+.taskRow {
+  margin-top: 10px;
+  margin-left: -30px;
+}
+.taskRow li {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.taskBtn {
+  margin-top: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.taskBtnEdit {
+  background-color: rgb(14, 173, 165);
+  margin-right: 3px;
+}
+
+.taskBtnDelete {
+  background-color: rgb(153, 145, 31);
+}
+
+.taskInput {
+  margin-left: 14px;
+}
+
+/* input box properties */
+input[type="text"] {
+  width: 98%;
+  height: 40px;
+  background: blanchedalmond;
+  border: 2px solid #222;
+  color: black;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.taskButtons {
+  margin-top: 10px;
+  float: right;
+}
+
+/* main buttons to add/update tasks */
+.btnTasks {
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 7px;
+  background-color: rgb(1, 20, 1);
+  color: yellow;
+  width: 136px;
+  height: 32px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.showElement {
+  display: block;
+}
+.hideElement {
+  display: none;
+}
+
+/* LOGIN AREA - Authentication */
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid white;
+  padding: 10px;
+}
+
+#avatar {
+  width: 46px;
+}
+
+#loginHeader {
+  border: none;
+  margin-top: 20px;
+}
+
+#loginHeader h1 {
+  font-family: fantasy;
+  text-align: center;
+}
+
+.first {
+  color: white;
+  font-size: 40px;
+}
+
+.second {
+  color: rgb(123, 204, 17);
+  font-size: 65px;
+}
+
+#loginForm {
+  background-color: lightgray;
+  border-radius: 20px;
+  margin-top: 7%;
+}
+
+#loginForm h3 {
+  color: rgb(77, 77, 77);
+  margin-bottom: 25px;
+}
+
+#btnLogin {
+  width: 100%;
+}
+
+#btnCreateAccount {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#registerModal {
+  width: 400px;
+}
+
+#registerForm {
+  background-color: rgb(50, 66, 18);
+  color: white;
+  text-align: right;
+}
+
+#btnFinish {
+  float: left;
+  margin-right: 110px;
+}
