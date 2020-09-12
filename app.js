@@ -33,7 +33,7 @@ app.set("view engine", "jade");
 
 // set up cors to allow us to accept requests from our client
 var corsOption = {
-  origin: "https://mytodobyali.herokuapp.com/", // allow to server to accept request from different origin
+  origin: "https://mytodobyali.herokuapp.com", // allow to server to accept request from different origin
   //origin: "http://localhost:3000", // allow to server to accept request from different origin
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true, // allow session cookie from browser to pass through

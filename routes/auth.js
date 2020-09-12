@@ -16,8 +16,8 @@ router.get(
 
 //path === redirect URI (on Google's Dev Console)
 router.get("/login/redirect", passport.authenticate("google"), (req, res) => {
-  //res.redirect("/welcome");
-  res.send("Callback URI" + req.user);
+  res.redirect("/welcome");
+  //res.send("Callback URI" + req.user);
 });
 
 // allow app alogout
