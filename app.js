@@ -98,10 +98,7 @@ mongoose.connect(
 
 //----------------------------------------- DEPLOYMENT---------------------------------------------------
 
-if (
-  process.env.NODE_ENV === "production" ||
-  process.env.NODE_ENV === "staging"
-) {
+if (process.env.NODE_ENV === "production") {
   // Serve any static files
   app.use(express.static(path.join(__dirname, "frontend/build")));
   // Handle React routing, return all requests to React app
