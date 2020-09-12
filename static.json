@@ -5,7 +5,7 @@
     "/**": "index.html"
   },
   "proxies": {
-    "/login/google/": {
+    "/api/": {
       "origin": "${API_URL}"
     }
   }
