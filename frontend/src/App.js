@@ -119,13 +119,15 @@ class App extends Component {
   /** google oAuth capture handler */
   responseGoogle(e) {
     var googleLoginWindow = window.open(
-      "http://localhost:5000/login/google",
+      //"http://localhost:5000/login/google",
+      "https://mytodobyali.herokuapp.com:5000/login/google",
       "Connect to Google", // "_self"
       "toolbar=0,status=0,width=548,height=400,top=300,left=600"
     );
     setInterval(function () {
       if (googleLoginWindow.closed) {
-        window.open("http://localhost:3000/home", "_self");
+        //window.open("http://localhost:3000/home", "_self");
+        window.open("https://mytodobyali.herokuapp.com:3000/home", "_self");
         //window.opener.document.location.href = "http://localhost:3000/home";
       }
     }, 1000);
