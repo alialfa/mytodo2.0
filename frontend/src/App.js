@@ -94,7 +94,8 @@ class App extends Component {
         .then((res) => res.json())
         .then((data) => {
           if (data.status === "OK") {
-            window.location.href = "http://localhost:3000/home";
+            //window.location.href = "http://localhost:3000/home";
+            window.location.href = "https://mytodobyali.herokuapp.com/home";
           }
           if (data.status === "FAIL") {
             alert(JSON.stringify(data.message));
