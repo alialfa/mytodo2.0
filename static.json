@@ -3,8 +3,5 @@
   "clean_urls": false,
   "routes": {
     "/**": "index.html"
-  },
-  "proxies": {
-    "origin": "${API_URL}"
   }
 }
