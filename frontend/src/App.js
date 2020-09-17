@@ -119,8 +119,8 @@ class App extends Component {
   /** google oAuth capture handler */
   responseGoogle(e) {
     var googleLoginWindow = window.open(
-      "http://localhost:5000/login/google",
-      //"https://mytodobyali.herokuapp.com/login/google",
+      //"http://localhost:5000/login/google",
+      "https://mytodobyali.herokuapp.com/login/google",
       "Connect to Google", // "_self"
       "toolbar=0,status=0,width=548,height=400,top=300,left=600"
     );
