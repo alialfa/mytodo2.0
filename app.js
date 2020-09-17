@@ -31,6 +31,7 @@ var app = express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
 
+/*
 // set up cors to allow us to accept requests from our client
 var corsOption = {
   origin: "https://mytodobyali.herokuapp.com", // allow to server to accept request from different origin
@@ -40,9 +41,21 @@ var corsOption = {
   exposedHeaders: ["x-auth-token"],
 };
 
-app.use(cors(corsOption));
+app.use(cors(corsOption));*/
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(cors());
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "DELETE, PUT");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
 
 app.use(
   cookieSession({ maxAge: 24 * 60 * 60 * 1000, keys: [keys.session.cookieKey] })
